@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;800;900&family=Roboto:wght@400;500&display=swap');
+
+
+
+*{
+  margin: 0;
+  padding: 0;
+}
+a, a:hover{
+  text-decoration: none;
+  color: black;
+}
+ul{
+  list-style: none;
+}
+li{
+  margin-top: 8%;
+  color: white;
+  font-family: 'Inter', sans-serif;
+}
+body{
+  background-color: #FFFCFC;
+  overflow-x: hidden;
+  /* overflow-y: hidden; */
+  max-width: 1920px;
+}
+
+button,a{
+  background: none;
+  border: none;
+  font-family:'Inter', sans-serif;
+  font-weight: bold;
+  font-size: 0.9em;
+}
+button:hover{
+  cursor: pointer;
+}
+main{
+  position: absolute;
+  top: 11%;
+  height: 100%;
+  width: 100%;
+}
+h1,h2{
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  margin-top: 2%;
+}
+
+button.botao-padrao:hover{
+  opacity: 90%;
+}
+button div.traco{
+  position: relative;
+  width: 0%;
+  height: 2%;
+  background-color: black;
+  transition: all 0.3s ease-in-out;
+}
+button.botao-padrao:hover div.traco{
+  width: 100%;
+}

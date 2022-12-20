@@ -1,0 +1,126 @@
+<%- include('./partials/header') %>
+
+<main class="produtos" >
+
+    <div class="filtros">
+        <h3>Filtros</h3>
+    </div>
+    <table>       
+                <tr id= 'td1'>
+                    <% produtos.forEach((p,i) => { %>
+                        <% if(i <= 3){ %>
+                            <td >
+                                <div class="card-prod" >
+                                    <img src="./images/racao.png" alt="">
+                                    <hr>
+                                    
+                                        <h3 class="desc"><%= p.produto %></h3>
+                                        <p class="info">R$ <%= p.valor %></p>
+                                    
+                                    <button>Add to cart</button>
+                                    
+                                </div>
+                                
+                            </td>
+                        <% } %>    
+                    <% }); %>
+                </tr>
+                <tr id="td2">
+                    <% produtos.forEach((p,i) => { %>
+                        <% if(i >= 4 && i <= 7){ %>
+                            <td >
+                                <div class="card-prod" >
+                                    <img src="./images/racao.png" alt="">
+                                    <hr>
+                                    
+                                        <h3 class="desc"><%= p.produto %></h3>
+                                        <p class="info">R$ <%= p.valor %></p>
+                                    
+                                    <button>Add to cart</button>
+                                    
+                                </div>
+                                
+                            </td>
+                        <% } %>    
+                    <% }); %>
+                </tr>
+                <tr id="td3">
+                    <% produtos.forEach((p,i) => { %>
+                        <% if(i >= 8 && i <= 11){ %>
+                            <td >
+                                <div class="card-prod" >
+                                    <img src="./images/racao.png" alt="">
+                                    <hr>
+                                    
+                                        <h3 class="desc"><%= p.produto %></h3>
+                                        <p class="info">R$ <%= p.valor %></p>
+                                    
+                                    <button>Add to cart</button>
+                                    
+                                </div>
+                                
+                            </td>
+                        <% } %>    
+                    <% }); %>
+                </tr>
+                <tr id="td4">
+                    <% produtos.forEach((p,i) => { %>
+                        <% if(i >= 12 && i <= 15){ %>
+                            <td >
+                                <div class="card-prod" >
+                                    <img src="./images/racao.png" alt="">
+                                    <hr>
+                                    
+                                        <h3 class="desc"><%= p.produto %></h3>
+                                        <p class="info">R$ <%= p.valor %></p>
+                                    
+                                    <button>Add to cart</button>
+                                    
+                                </div>
+                                
+                            </td>
+                        <% } %>    
+                    <% }); %>
+                </tr>
+                <tr id="td5">
+                    <% produtos.forEach((p,i) => { %>
+                        <% if(i >= 16 && i <= 19){ %>
+                            <td >
+                                <div class="card-prod" >
+                                    <img src="./images/racao.png" alt="">
+                                    <hr>
+                                    
+                                        <h3 class="desc"><%= p.produto %></h3>
+                                        <p class="info">R$ <%= p.valor %></p>
+                                    
+                                    <button>Add to cart</button>
+                                    
+                                </div>
+                                
+                            </td>
+                        <% } %>    
+                    <% }); %>
+                </tr>
+            
+        
+        
+        
+        
+    </table>
+    
+</main>
+
+
+<%- include('./partials/footer') %>
+</body>
+<script>
+    // function adicionar(n){
+    //     let produto = document.getElementById(`nome${n}`)
+    //     let valor = document.getElementById(`valor${n}`)
+    //     valor.nodeValue
+    // }
+    
+
+</script>
+
+</html>

@@ -1,0 +1,23 @@
+<%- include('./partials/header') %>
+
+<main class="menu">
+
+    <div class="box-login">
+        <h2>Adicionar Item</h2>
+
+        <form action="/protected" method="post">
+            <label for="nome"><strong>Produto</strong></label>
+            <input type="text" name="nome" id="nome" placeholder="produto">
+            <label for="valor"><strong>Preço</strong></label>
+            <input type="number" name="valor" id="valor" placeholder="R$">
+
+            <button type="submit" class="botao-padrao">
+                Adicionar
+                <div class="traco"></div>
+            </button>
+        </form>
+    </div>
+    
+    <img src="/images/toys.png" alt="toys" style="position: relative;top: 87%;transform: scale(3);left: 40%;">
+</main>
+

@@ -1,0 +1,23 @@
+<%- include('./partials/header') %>
+
+<main class="menu">
+
+    <div class="box-login">
+        <h2>Login</h2>
+
+        <form action="/login" method="post">
+
+            <input type="email" name="email" id="email" placeholder="Email">
+            <input type="password" name="password" id="password" placeholder="Senha">
+
+            <div class="buttons-login">
+                <button id="register"><a href="/registro">Registre-se</a></button>
+                <button type="submit">Entrar</button>
+            </div>
+        </form>
+    </div>
+    
+    <img src="./images/grass.png" alt="" id="img-login">
+</main>
+<script src="app.js"></script>
+<script src="../routes/login.js"></script>

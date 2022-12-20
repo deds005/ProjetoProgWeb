@@ -1,0 +1,233 @@
+@import url('https://fonts.googleapis.com/css2?family=Cookie&family=Inter:wght@300;400;800;900&family=Roboto:wght@400;500&display=swap');
+
+
+main#index{
+    top: 0%;
+}
+
+main section.begin{
+    position: relative;
+    height: 85%;
+    width: 100%;
+    /* border: 1px solid red; */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+main section .ellipse{
+    position: relative;
+    bottom: 10%;
+    left: 53%;
+    z-index: -1;
+    transform: rotateZ(-135deg);
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    border-bottom-left-radius: 50%;
+    width: 50%;
+    height: 140%;
+    background-image: linear-gradient(30deg, #FFEA4F 80%, #FAF9F7 );
+    
+}
+main section #div-content{
+    position: absolute;
+    width: 95%;
+    height: 85%;
+    /* border: 1px solid blue; */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+}
+main section #div-content h1{
+    font-family: 'Cookie', cursive;
+    margin-left: 20%;
+    position: relative;
+    font-size: 6em;
+    font-weight: 400;
+    animation: title 2s ease-out ;
+}
+
+
+@keyframes title{
+    from{
+        right: 40%;
+    }
+    to{
+        right: 0%;
+    }
+}
+@keyframes dog{
+    from{
+        left: 50%;
+    }
+    to{
+        left: 0%;
+    }
+}
+
+/* SECTION PRODUTOS  */
+main section.produtos{
+    position: absolute;
+    /* border: 1px solid red; */
+    margin-top: 5%;
+    width: 100%;
+    height: 90%;
+    display: flex;
+    justify-content: center;
+    background-color: #FFFCFC;
+}
+main section.produtos h1{
+    color: #1E02A3;
+}
+main section.produtos div.itens{
+    position: absolute;
+    width: 100%;
+    height: 80%;
+    margin-top: 7%;
+    /* border: 1px solid blue; */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+}
+main section.produtos div.itens .card{
+    height: 100%;
+    width: 27%;
+    /* border: 1px solid red; */
+    border-radius: 20px;
+    background-image: linear-gradient(0deg, #FFEA4F, #FFFFFF);
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.2);
+    transition: all 0.5s ease-in-out;
+}
+main section.produtos div.itens .card:hover{
+    transform: scale(1.05);
+    cursor: pointer;
+}
+main section.produtos div.itens .card img{
+    width: 100%;
+    height: 70%;
+}
+main section.produtos div.itens .card h2{
+    
+    color: #1E02A3;
+    font-size: 1.6em;
+}
+main section.produtos div.itens .card .infocard{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 20%;
+    /* border: 1px solid blue; */
+    position: relative;
+    margin-bottom: 5%;
+}
+main section.produtos div.itens .card p{
+    font-family: 'Roboto', sans-serif;
+    padding: 0% 0.5% 0% 1%;
+}
+
+/* styling pets page */
+section.pets{
+    position: absolute;
+    height: 80%;
+    width: 100%;
+    /* border: 1px solid green; */
+    margin-top: 50%;
+}
+
+
+section.pets div.itens{
+    position: absolute;
+    width: 100%;
+    height: 80%;
+    /* border: 1px solid blue; */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+}
+section.pets div.itens .card{
+    height: 90%;
+    width: 24%;
+    /* border: 1px solid red; */
+    border-radius: 20px;
+    align-items: center;
+    background-image: linear-gradient(0deg, #FFEA4F, #FFFFFF);
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.2);
+    transition: all 0.5s ease-in-out;
+}
+main section.pets div.itens .card:hover{
+    transform: scale(1.05);
+    cursor: pointer;
+}
+main section.pets div.itens .card img{
+    width: 50%;
+    /* border: 1px solid red; */
+    height: 60%;
+}
+main section.pets div.itens .card .another-img{
+    width: 90%;
+    height: 60%;
+}
+main section.pets div.itens .card h2{
+    
+    color: #1E02A3;
+    font-size: 1.6em;
+}
+main section.pets div.itens .card .infocard{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 20%;
+    /* border: 1px solid blue; */
+    position: relative;
+    margin-bottom: 15%;
+}
+main section.pets div.itens .card p{
+    font-family: 'Roboto', sans-serif;
+    padding: 0% 0.5% 0% 1%;
+}
+
+/* styling quem-somos  */
+section.quem-somos{
+    position: absolute;
+    height: 90%;
+    width: 100%;
+    /* border: 1px solid red; */
+    margin-top: 90%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    background-image: linear-gradient(0deg, #18ACFF, #FFFFFF);
+}
+section.quem-somos .info-qs{
+    height: 100%;
+    width: 60%;
+    /* border: 1px solid blue; */
+    z-index: 2;
+}
+section.quem-somos .info-qs p{
+    position: absolute;
+    margin-right: 55%;
+    font-weight: 500;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.2em;
+    margin-top: 2%;
+    padding: 0% 2% 0% 2%;
+}
+
+section.quem-somos .info-qs h1{
+    margin-left: 5%;
+}
+section.quem-somos img{
+    width: 80%;
+    height: 90%;
+    margin-top: 5%;
+}
